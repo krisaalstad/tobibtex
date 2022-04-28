@@ -87,7 +87,9 @@ while ~feof(fidr)
     lead=strrep(lead,'\''{','');
     lead=strrep(lead,'}','');
     lead=strrep(lead,'-','');
+    lead=strrep(lead,' ','');
     name=[lead year];
+    
     
     tj=ls{2}; % title and journal info
     tjs=strsplit(tj,'.');
