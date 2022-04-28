@@ -95,6 +95,7 @@ while ~feof(fidr)
     tjs=strsplit(tj,'.');
     title=strtrim(tjs{1});
     title=strtrim(title);
+    title=strrep(title,'_','\_');
     doistr='https://doi.org/';
     isdoi=any(strfind(l,doistr));
     
