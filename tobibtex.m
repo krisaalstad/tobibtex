@@ -197,6 +197,7 @@ while ~feof(fidr)
             fprintf(fidw,'%s \n',title);
             year=sprintf('year={%s},',year);
             fprintf(fidw,'%s \n',year);
+            journal=strrep(journal,'&','\&');
             journal=sprintf('journal={%s},',journal);
             fprintf(fidw,'%s \n',journal);
             volume=sprintf('volume={%s},',vol);

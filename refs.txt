@@ -32,6 +32,7 @@ Dumont, M., Durand, Y., Arnaud, Y., & Six, D. (2012). Variational assimilation o
 Dunne, S., & Entekhabi, D. (2005). An ensemble-based reanalysis approach to land data assimilation. Water Resources Research, 41, W02013. https://doi.org/10.1029/2004WR003449
 Durand, M., & Margulis, S. A. (2006). Feasibility Test of Multifrequency Radiometric Data Assimilation to Estimate Snow Water Equivalent. Journal of Hydrometeorology, 7(3), 443–457. https://doi.org/10.1175/JHM502.1
 Durand, M., Molotch, N. P., & Margulis, S. A. (2008). Merging complementary remote sensing datasets in the context of snow water equivalent reconstruction. Remote Sensing of Environment, 112(3), 1212–1225. https://doi.org/10.1016/j.rse.2007.08.010
+Emerick, A. A., & Reynolds, A. C. (2012). History matching time-lapse seismic data using the ensemble Kalman filter with multiple data assimilations. Computational Geosciences, 16, 639-539. https://doi.org/10.1007/s10596-012-9275-5
 Emerick, A. A., & Reynolds, A. C. (2013). Ensemble smoother with multiple data assimilation. Computers & Geosciences, 55, 3–15. https://doi.org/10.1016/j.cageo.2012.03.011
 Essery, R. (2015). A factorial snowpack model (FSM 1.0). Geoscientific Model Development, 8(12), 3867–3876. https://doi.org/10.5194/gmd-8-3867-2015
 Evensen, G. (1994). Sequential data assimilation with a nonlinear quasi-geostrophic model using Monte Carlo methods to forecast error statistics. Journal of Geophysical Research, 99(C5), 10143. https://doi.org/10.1029/94JC00572
