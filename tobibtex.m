@@ -82,6 +82,7 @@ while ~feof(fidr)
     authors=strrep(authors,'ó','\''{o}');
     authors=strrep(authors,'í','\''{i}');
     authors=strrep(authors,'é','\''{e}');
+    authors=strrep(authors,'ü','\''{u}');
     authors=strtrim(authors);
     lead=strsplit(authors,','); lead=lead{1};
     lead=strrep(lead,'\''{','');
