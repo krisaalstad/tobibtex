@@ -1,7 +1,7 @@
 # tobibtex
 Converts references in a text (.txt) file to bibtex format and writes these to a .bib file using the MATLAB function tobibtex.m
 
-To test this function, run the example script (**example.m**) which takes the 124 references in the file **refs.txt**, converts them to bibtex format and then writes them to the file **thebib.bib** that is ready for use as a bibliography in a LaTeX document. 
+To test this function, run the example script (**example.m**) which takes the 130 references in the file **refs.txt**, converts them to bibtex format and then writes them to the file **thebib.bib** that is ready for use as a bibliography in a LaTeX document. 
 
 For details on how this works, look at the function itself (**tobibtex.m**) which includes an extensive initial set of comments. Comments in the body of the function itself are minimal since these are all elementary string processing operations that are tied to the assumed input format. The idea is that this can serve as a skeleton for other input formats as well.
 

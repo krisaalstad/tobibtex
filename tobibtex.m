@@ -82,9 +82,14 @@ while ~feof(fidr)
     authors=strrep(authors,'ó','\''{o}');
     authors=strrep(authors,'í','\''{i}');
     authors=strrep(authors,'é','\''{e}');
-    authors=strrep(authors,'ü','\''{u}');
+    authors=strrep(authors,'ü','{\"u}');
     authors=strtrim(authors);
     lead=strsplit(authors,','); lead=lead{1};
+    lead=strrep(lead,'\"u','u');
+    lead=strrep(lead,'\''{','');
+    lead=strrep(lead,'\{','');
+    lead=strrep(lead,'{','');
+    lead=strrep(lead,'}','');
     lead=strrep(lead,'\''{','');
     lead=strrep(lead,'}','');
     lead=strrep(lead,'-','');
@@ -167,7 +172,9 @@ while ~feof(fidr)
             citation=sprintf('@article{%s,',name);
             if any(strcmp(citation,oldcitation))
                 citation=sprintf('@article{%sb,',name); % If the citation already exists, at "b" at the end
-            end
+            elseif any(strcmp(citation(1:(end-1)),oldcitation(1:(end-2))))
+                citation=sprintf('@article{%sc,',name); % If already exists with "b", add "c"
+            end % Assumes max 3 papers per first author per year.
             pp=lss{end};
             pp=strrep(pp,'.','');
             pp=strtrim(pp);
